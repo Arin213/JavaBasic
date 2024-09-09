@@ -34,7 +34,7 @@ NOTE: Do not set kilobytes parameter value inside your method.
 
 NOTE: The solution will not be accepted if there are extra spaces.
 
-NOTE: The printMegaBytesAndKiloBytes method  needs to be defined as public static ​like we have been doing so far i
+NOTE: The printMegaBytesAndKiloBytes method  needs to be defined as public static ​like we have been doing so far 
 * */
 
 public class MegaBytesConverter {
