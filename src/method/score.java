@@ -31,7 +31,7 @@ public class score {
 //        }
 //        return  position;
         return playerScore >= 1000 ? 1 :
-                playerScore >= 500 ? 2:
-                        playerScore >= 100 ? 3: 4;
+               playerScore >= 500 ? 2:
+               playerScore >= 100 ? 3: 4;
     }
 }
