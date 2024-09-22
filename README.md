@@ -1,4 +1,5 @@
 ### Basic
-This is the basic learning continuation of java where  i am learning currently. 
-and also the slightly start to familiar with git and github as well. I will try oftnely to update my learning journey here. 
-by updating code or commiting and adding new files about the new topics about Java.
+This is the basic learning continuation of java where I am learning currently. 
+And also the slight start to familiar with git and GitHub as well.
+I will often try to update my learning journey here. 
+By updating code or commiting and adding new files about the new topics about Java.

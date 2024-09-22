@@ -53,7 +53,7 @@ public class SumOddRange {
     }
     // method for checking if the number is odd or even.
     public static boolean isOdd(int number){
-        if (number <=0 ){
+        if (number <= 0 ){
             return false;
         }
         return number % 2 != 0;
