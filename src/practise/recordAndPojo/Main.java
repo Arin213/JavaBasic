@@ -1,4 +1,4 @@
-package practise;
+package practise.recordAndPojo;
 
 public class Main {
     public static void main(String[] args){

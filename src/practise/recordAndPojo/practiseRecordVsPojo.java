@@ -1,4 +1,4 @@
-package practise;
+package practise.recordAndPojo;
 
 public class practiseRecordVsPojo {
     private String name;
