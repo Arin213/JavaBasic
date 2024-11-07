@@ -1,1 +1,8 @@
 *.class
+*.temp
+*.log
+.idea/
+*.iml
+.env
+config/secrets.xml
+.mvn/
