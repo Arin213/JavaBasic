@@ -1,5 +1,5 @@
 package OOP_1.bankAccount;
-import java.util.Scanner;
+
 /** Object-Oriented Challenge:
  * Create a nw class for a bank account.
 
