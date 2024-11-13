@@ -1,4 +1,4 @@
-package OOP_1.codingExercise.askFromChatGpt;
+package OOP_1.codingExercise.practiseFromChatGpt;
 
 public class Main {
     public static void main(String[] args){
