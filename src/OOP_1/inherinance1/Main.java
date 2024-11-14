@@ -28,17 +28,24 @@ public class Main {
         Animal animal = new Animal("Generic Animal", "Huge", 400);
         // well class is passed as parameter 'animal'
         doAnimalStuff(animal, "slow");
+//        animal.makeNoise();
 
         Dog dog = new Dog();
         /**dog as param will access to the class dog materials
          * */
         doAnimalStuff(dog, "fast");
 
-        Dog boxer = new Dog("Boxer tendu", 15);
+        Dog boxer = new Dog("Boxer tendu", 50);
         doAnimalStuff(boxer, "fast");
 
         Dog retriever = new Dog("Labrador Retriever", 65, "Floppy", "Swimmer");
         doAnimalStuff(retriever, "slow");
+
+        Dog wolf = new Dog("wolf", 40);
+        doAnimalStuff(wolf,"slow");
+
+        Fish goldie =  new Fish("Goldfish", 0.75, 2, 3);
+        doAnimalStuff(goldie, "fast");
 
     }
     // body or actions of animals

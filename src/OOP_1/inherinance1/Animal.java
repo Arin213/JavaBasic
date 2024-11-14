@@ -1,7 +1,9 @@
 package OOP_1.inherinance1;
 
 public class Animal {
-    private String type;
+    //because private can access within the same class however protected can be access through package.
+//    private String type;
+    protected String type;
     private String size;
     private double weight;
 

@@ -18,7 +18,7 @@ public class Dog extends Animal {
     private String tailShape;
 
     public Dog() {
-        super("Boxer tendu", "Big", 50);
+        super("Mike", "Small", 15);
     }
     public Dog(String type, double weight){
         this(type, weight, "Perky", "Curled");
@@ -37,16 +37,66 @@ public class Dog extends Animal {
                 "} " + super.toString(); // this super is different than super(). lot like this keyword wit the dot notation.
     }
 
-    public void makNoise(){
+//    @Override
+//    public void makeNoise() {
+//        super.makeNoise();
+//        bark();
+//        System.out.println();
+//    }
+
+    // overridden the method makeNoise()
+    public void makeNoise(){
+        /**type == "wolf" not possible because of private access, however protected can do the job
+         * because protected access modifier can accessible with in the packages,
+         * just changing the field of Animal private String type to protected String type:
+         * */
+        if(type == "wolf"){
+            System.out.println("Ow Woooooo! ");
+        }
+        bark();
+        System.out.println();
 
     }
 
     /** override the method move() of the superclass or Animal class here
      * adding methods or let's say extends more functionality can be ok in inheritance.
      * */
+
+    /**can be accessible in other class like main class & from this class we can access private.
+     * since   animal.makeNoise(); can access walk(), wagTail()
+     * run() and bark().
+     * This is a common pattern where public  methods act as a "gateway"
+     * for external code to access specific internal behaviours without      *  exposing the internal methods directly.
+     * */
     @Override
     public void move(String speed) {
         super.move(speed);
-        System.out.println("Dog walk, run, and wag their tail");
+//        System.out.println("Dog walk, run, and wag their tail");
+        if(speed == "slow"){
+            walk();
+            wagTail();
+        } else {
+          run();
+          bark();
+        }
+        System.out.println();
+    }
+
+    //Access Modifiers
+    /** Now this will be access within the same class not outside the class
+     * */
+    private void bark(){
+        System.out.print("Woof! ");
+    }
+
+    private void run(){
+        System.out.print("Dog Running ");
+    }
+
+    private void walk(){
+        System.out.print("Dog Walking ");
+    }
+    private void wagTail(){
+        System.out.print("Tail wagging");
     }
 }
