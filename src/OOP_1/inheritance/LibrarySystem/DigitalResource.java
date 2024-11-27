@@ -21,7 +21,7 @@ public class DigitalResource extends LibraryItem {
     @Override
     public void displayInfo(){
         super.displayInfo();
-        System.out.println("File Size - " + fileSize +"Mb");
+        System.out.println("File Size - " + fileSize +" Mb");
     }
 
     @Override

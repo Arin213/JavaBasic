@@ -61,7 +61,7 @@ public class Main {
         mag.displayInfo();
         System.out.println(" ");
 
-        DigitalResource digitRrc = new DigitalResource("Toshiba", "????",1000 );
+        DigitalResource digitRrc = new DigitalResource("Toshiba user manual", "Toshiba corp",1000 );
         System.out.println(digitRrc);
         digitRrc.displayInfo();
 
