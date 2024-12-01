@@ -5,6 +5,7 @@ public class LibraryItem {
     private String author;
 
     public LibraryItem(){
+        this( "Unknown", "Unknown");
 
     }
 
