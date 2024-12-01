@@ -1,4 +1,4 @@
-package OOP_1.PoolArea;
+package OOP_1.codingExercise.PoolArea;
 
 /** Write a class with the name Cuboid that extends Rectangle class.
  * The class needs one field (instance variable) with name height of type double.
@@ -18,10 +18,10 @@ package OOP_1.PoolArea;
 
 
  * */
-public class Cubiod extends Rectangle{
+public class Cuboid extends Rectangle{
     private double height;
 
-    public Cubiod(double width, double length, double height){
+    public Cuboid(double width, double length, double height){
         super(width, length);
         this.height = height < 0 ? 0: height;
     }
