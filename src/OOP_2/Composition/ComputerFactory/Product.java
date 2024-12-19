@@ -1,4 +1,4 @@
-package OOP_2.Compostion.ComputerFactory;
+package OOP_2.Composition.ComputerFactory;
 
 /** Creeated product class as main super class and has its subclasses
  * Moniter, Motherboard and ComputerCase but this relationship is tightly

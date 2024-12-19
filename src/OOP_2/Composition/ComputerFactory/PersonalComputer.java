@@ -1,4 +1,4 @@
-package OOP_2.Compostion.ComputerFactory;
+package OOP_2.Composition.ComputerFactory;
 
 public class PersonalComputer extends Product {
     private Monitor monitor;
