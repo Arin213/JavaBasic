@@ -1,6 +1,6 @@
 package OOP_2.Encapsulation;
 
-import javax.swing.plaf.BorderUIResource;
+
 
 /** Create a class named printer.
  * The fields on this class are as follows:
