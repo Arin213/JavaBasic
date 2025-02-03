@@ -73,3 +73,33 @@ public class randomArray {
 
     }
 }
+
+/*
+
+import java.util.Scanner;
+
+
+class Main {
+    public static void main(String[] args) {
+        // put your code here
+        Scanner scanner = new Scanner(System.in);
+        int num = scanner.nextInt();
+        System.out.println(getIndexOfMaxNumber(num));
+
+
+    }
+
+    public static int getIndexOfMaxNumber(int num){
+        Random rand = new Random();
+        int maxIndex = 0;
+        for(int i = 0; i < numArray.length; i++){
+            numArray[i] = rand.nextInt();
+            if(numArray[i] > numArrya[maxIndex]) {
+                maxIndex = i;
+            }
+        }
+        return maxIndex;
+
+    }
+}
+ */
