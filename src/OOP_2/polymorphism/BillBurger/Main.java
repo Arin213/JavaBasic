@@ -1,4 +1,4 @@
-package OOP_2.polymorphism.FoodRestaurant;
+package OOP_2.polymorphism.BillBurger;
 
 /**Challenge is to build a complete application using all the principles of
  * object-oriented programming that have been taught in these modules.
@@ -14,7 +14,7 @@ package OOP_2.polymorphism.FoodRestaurant;
  *
  * You need a meal order.
  * -> This should be composed of exactly one burger,one drink and one side item.
- * -> The most common meal order should be created with9out any arguments,like a regular burger,
+ * -> The most common meal order should be created without any arguments,like a regular burger,
  * drinks, and side items.
  *
  * You need a drink and side item.
@@ -47,12 +47,41 @@ package OOP_2.polymorphism.FoodRestaurant;
  * the drink price based on size, and the side item price.
  *-> Print the total due amount for the meal.
  *
- * 
+ *
  * */
 
 
 public class Main {
     public static void main (String[] args){
+        MealOrder mealOrder = new MealOrder();
+
+        System.out.println("Default Meal Order");
+        printDetails(mealOrder);
+
+        mealOrder.setBurger(new burger("Healthy", 6.00));
+        mealOrder.setDrink(new drink("Coke", "Medium", 1.00));
+        mealOrder.setSideitem(new sideitem("Fries", 1.00));
+        mealOrder.getBurger().setTopping("Lettuce");
+        mealOrder.getBurger().setTopping("Tomato");
+        mealOrder.getBurger().setTopping("Carrot");
+        mealOrder.getDrink().setSize("Large");
+        mealOrder.getDrink().setPrice(3.00);
+        mealOrder.getSideitem().setPrice(2.00);
+        System.out.println("Custom Meal Order");
+        printDetails(mealOrder);
+
 
     }
+    public static void printDetails( MealOrder mealOrder){
+        System.out.println("Burger Type: " + mealOrder.getBurger().getType());
+        System.out.println("Burger Price: $" + mealOrder.getBurger().getPrice());
+        System.out.println("Drink Type: " + mealOrder.getDrink().getType());
+        System.out.println("Drink Type price: $" + mealOrder.getDrink().getPrice());
+        System.out.println("Side Item: " + mealOrder.getSideitem().getType());
+        System.out.println("Side Item price: $" + mealOrder.getSideitem().getPrice());
+        System.out.println("===".repeat(5));
+        System.out.println("Total: $" + mealOrder.getTotal());
+
+    }
+
 }
